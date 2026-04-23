@@ -1,0 +1,35 @@
+@use "../abstract/constants" as c;
+
+.button {
+  font-family: 'Open Sans', Verdana, sans-serif;
+  padding: 11px 25px 13px;
+  font-style: none;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transform: all .3s;
+}
+
+.button_bordered {
+  background: c.$color-light;
+  border: 1px solid c.$color-border;
+  color: c.$color-text;
+}
+
+.button_colored {
+  background: c.$color-primary;
+  color: c.$color-light;
+  border: 1px solid c.$color-primary;
+}
+
+.button_colored:hover {
+  background: c.$color-additional;
+  border-color: c.$color-additional;
+}
+
+.button_bordered:hover {
+  background: c.$color-hovered;
+  border-color: c.$color-hovered;
+}

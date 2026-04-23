@@ -6,19 +6,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./sass/style.css">
   <title>Friday live coding</title>
 </head>
 <body>
   <header class="header">
-    <div class="wrapper">
-      <a href="#" class="logo">Logo</a>
+    <div class="wrapper header__wrapper">
+      <a href="#" class="logo"><img src="./img/logo.png" alt=""></a>
       <nav class="header__navigation">
         <ul class="navigation">
-          <li>Home</li>
-          <li>Servises</li>
-          <li>About</li>
-          <li>Product</li>
+          <li class="navigation__link">Home</li>
+          <li class="navigation__link">Servises</li>
+          <li class="navigation__link">About</li>
+          <li class="navigation__link">Product</li>
         </ul>
       </nav>
       <div class="header__buttons">
@@ -28,7 +28,7 @@
     </div>
   </header>
   <section class="promo">
-    <div class="wrapper">
+    <div class="wrapper promo__wrapper">
       <div class="promo__content">
         <h1 class="title">The Design Thinking superpowers</h1>
         <p>Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</p>
@@ -39,6 +39,7 @@
           </a>
         </div>
       </div>
+      <img src="./img/promo/promo.png" alt="" class="promo_image">
     </div>
   </section>
   <section class="tools">
@@ -65,6 +66,8 @@
       <div class="strategies__tags">
         <span class="tag tag_selected">All</span>
         <span class="tag tag_bordered">Art</span>
+        <span class="tag tag_bordered">Culture</span>
+        <span class="tag tag_bordered">Design</span>
       </div>
       <div class="layout-3-column">
         <div class="strategy block-shadowed">
@@ -73,6 +76,62 @@
           <div class="strategies__tags">
             <span class="tag tag_colored">Art</span>
             <span class="tag tag_colored">Design</span>
+          </div>
+        </div>
+        <div class="strategy block-shadowed">
+          <img src="./img/strategies/2.jpg" alt="strategy" class="strategy__image">
+          <h3>Motivation Is The First Step To Success</h3>
+          <div class="strategies__tags">
+            <span class="tag tag_colored">Culture</span>
+          </div>
+        </div>
+        <div class="strategy block-shadowed">
+          <img src="./img/strategies/3.jpg" alt="strategy" class="strategy__image">
+          <h3>Success Steps For Your Personal Or Business Life</h3>
+          <div class="strategies__tags">
+            <span class="tag tag_colored">Culture</span>
+            <span class="tag tag_colored">Design</span>
+            <span class="tag tag_colored">Art</span>
+          </div>
+        </div>
+        <div class="strategy block-shadowed">
+          <img src="./img/strategies/4.jpg" alt="strategy" class="strategy__image">
+          <h3>Success Steps For Your Personal Or Business Life Plus Funny Image on the Back</h3>
+          <div class="strategies__tags">
+            <span class="tag tag_colored">Culture</span>
+            <span class="tag tag_colored">Design</span>
+            <span class="tag tag_colored">Art</span>
+          </div>
+        </div>
+        <div class="strategy block-shadowed">
+          <img src="./img/strategies/5.jpg" alt="strategy" class="strategy__image">
+          <h3>Increasing Prosperity With Positive Thinking</h3>
+          <div class="strategies__tags">
+            <span class="tag tag_colored">Design</span>
+          </div>
+        </div>
+        <div class="strategy block-shadowed">
+          <img src="./img/strategies/1.jpg" alt="strategy" class="strategy__image">
+          <h3>Increasing Prosperity With Positive Thinking</h3>
+          <div class="strategies__tags">
+            <span class="tag tag_colored">Art</span>
+            <span class="tag tag_colored">Design</span>
+          </div>
+        </div>
+        <div class="strategy block-shadowed">
+          <img src="./img/strategies/2.jpg" alt="strategy" class="strategy__image">
+          <h3>Motivation Is The First Step To Success</h3>
+          <div class="strategies__tags"> 
+            <span class="tag tag_colored">Culture</span>
+          </div>
+        </div>
+        <div class="strategy block-shadowed">
+          <img src="./img/strategies/3.jpg" alt="strategy" class="strategy__image">
+          <h3>Success Steps For Your Personal Or Business Life</h3>
+          <div class="strategies__tags">
+            <span class="tag tag_colored">Culture</span>
+            <span class="tag tag_colored">Design</span>
+            <span class="tag tag_colored">Art</span>
           </div>
         </div>
       </div>
@@ -89,6 +148,23 @@
             <p class="employee__title">Product Mannager</p>
             <a href="mailto:kathyr@gmail.com">kathyr@gmail.com</a>
           </div>
+          <img src="./img/employees/kathy.png" alt="" class="employee__image">
+        </div>
+        <div class="employee block-shadowed">
+          <div class="employee__content">
+            <h5>Alexandra Boyarskaya</h5>
+            <p class="employee__title">Support Marketing Specialist</p>
+            <a href="mailto:kathyr@gmail.com">alexandrab@gmail.com</a>
+          </div>
+          <img src="./img/employees/alexandra.png" alt="" class="employee__image">
+        </div>
+        <div class="employee block-shadowed">
+          <div class="employee__content">
+            <h5>Melani Amini</h5>
+            <p class="employee__title">Photographer</p>
+            <a href="mailto:kathyr@gmail.com">melania@gmail.com</a>
+          </div>
+          <img src="./img/employees/melani.png" alt="" class="employee__image">
         </div>
       </div>
     </div>
@@ -129,6 +205,23 @@
           <h4>Quick Links</h4>
           <ul class="footer-navigation__links">
             <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+          <h4>Legal Stuff</h4>
+          <ul class="footer-navigation__links">
+            <li><a href="#">Disclamer</a></li>
+            <li><a href="#">Financing</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of service</a></li>
+          </ul>
+          <h4>Quick Links</h4>
+          <ul class="footer-navigation__links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQ</a></li>
           </ul>
         </div>
       </div>
