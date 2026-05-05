@@ -77,6 +77,14 @@ h5 {
   border-color: hsl(211, 44.1%, 81.8%);
 }
 
+.logo-path {
+  transition: all 0.3s ease-out;
+}
+
+.logo-svg:hover .logo-path {
+  fill: hsl(5, 100%, 78.2%);
+}
+
 .wrapper {
   max-width: 1197px;
   margin: auto;

@@ -1,0 +1,12 @@
+@use "../abstract/constants" as c;
+@use "../abstract/placeholders";
+
+.logo-path {
+  @extend %transition;
+}
+
+.logo-svg:hover {
+  .logo-path {
+    fill: c.$color-primary;
+  }
+}

@@ -3,6 +3,7 @@
 // Base
 @use "./base/base";
 @use "./base/buttons";
+@use "./base/logo";
 
 // Layouts
 @use "./layouts/wrapper";
@@ -11,3 +12,6 @@
 // Components
 @use "./components/contact-us";
 @use "./components/promo";
+
+// Plaseholders
+@use "./abstract/placeholders"
