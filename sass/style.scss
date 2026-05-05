@@ -1,4 +1,11 @@
+// Normalize
+// @use "../node_modules/normalize-scss/sass/normalize";
+@use "./base/normalize";
+
+// Abstract
 @use "./abstract/constants";
+@use "./abstract/mixins";
+@use "./abstract/placeholders";
 
 // Base
 @use "./base/base";
@@ -12,6 +19,3 @@
 // Components
 @use "./components/contact-us";
 @use "./components/promo";
-
-// Plaseholders
-@use "./abstract/placeholders"

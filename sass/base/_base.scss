@@ -1,3 +1,5 @@
+@use "../abstract/mixins" as m;
+
 html {
   font-size: 10px;
 }
@@ -9,10 +11,7 @@ body {
 
 h1 {
   font-family: 'Poppins', Verdana, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 4.5rem;
-  line-height: 4.5rem;
+  @include m.font($size: 44px, $line-heigth: 54px);
 }
 
 h2 {
