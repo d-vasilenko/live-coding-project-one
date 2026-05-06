@@ -11,11 +11,15 @@
 @use "./base/base";
 @use "./base/buttons";
 @use "./base/logo";
+@use "./base/icons";
 
 // Layouts
 @use "./layouts/wrapper";
 @use "./layouts/header";
+@use "./layouts/columns";
 
 // Components
 @use "./components/contact-us";
 @use "./components/promo";
+@use "./components/navigation";
+@use "./components/tools";

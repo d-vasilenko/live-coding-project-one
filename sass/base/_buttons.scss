@@ -1,7 +1,8 @@
 @use "../abstract/constants" as c;
+@use "../abstract/placeholders";
 
 .button {
-  font-family: 'Open Sans', Verdana, sans-serif;
+  @extend %font-prim;
   padding: 11px 25px 13px;
   font-style: none;
   font-weight: 600;
@@ -10,26 +11,31 @@
   border-radius: 4px;
   cursor: pointer;
   transform: all .3s;
+  &_bordered {
+    background: c.$color-light;
+    border: 1px solid c.$color-border;
+    color: c.$color-text;
+    &:hover {
+      background: c.$color-hovered;
+      border-color: c.$color-hovered;
+    }
+  }
+  &_colored {
+    background: c.$color-primary;
+    color: c.$color-light;
+    border: 1px solid c.$color-primary;
+    &:hover {
+      background: c.$color-additional;
+      border-color: c.$color-additional;
+    }
+  }
 }
 
-.button_bordered {
-  background: c.$color-light;
-  border: 1px solid c.$color-border;
-  color: c.$color-text;
-}
-
-.button_colored {
-  background: c.$color-primary;
-  color: c.$color-light;
-  border: 1px solid c.$color-primary;
-}
-
-.button_colored:hover {
-  background: c.$color-additional;
-  border-color: c.$color-additional;
-}
-
-.button_bordered:hover {
-  background: c.$color-hovered;
-  border-color: c.$color-hovered;
+.link-button {
+  @extend %font-add;
+  color: c.$color-primary;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
 }
