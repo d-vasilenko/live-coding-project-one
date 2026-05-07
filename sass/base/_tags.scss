@@ -1,0 +1,25 @@
+@use "../abstract/constants" as c;
+@use "../abstract/mixins" as m;
+
+.tags {
+  display: flex;
+  >* {
+    margin-right: 7px;
+  }
+}
+
+.tag {
+  border-radius: 90px;
+  padding: 0 14px;
+  @include m.font($size: 1.3rem, $line-height: 2.8rem, $weight: normal);
+  &_selected {
+    background-color: c.$color-primary;
+    color: c.$color-light;
+  }
+  &_bordered {
+    border: 1px solid c.$color-border;
+  }
+  &_colored {
+    background-color: c.$color-tag;
+  }
+}

@@ -12,6 +12,7 @@
 @use "./base/buttons";
 @use "./base/logo";
 @use "./base/icons";
+@use "./base/tags";
 
 // Layouts
 @use "./layouts/wrapper";
@@ -23,3 +24,4 @@
 @use "./components/promo";
 @use "./components/navigation";
 @use "./components/tools";
+@use "./components/strategies";

@@ -10,7 +10,7 @@
   line-height: 2.2rem;
   border-radius: 4px;
   cursor: pointer;
-  transform: all .3s;
+  @extend %transition;
   &_bordered {
     background: c.$color-light;
     border: 1px solid c.$color-border;
