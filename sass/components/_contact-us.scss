@@ -11,12 +11,12 @@
 
 .contact-us__form {
   input, textarea {
-    border: none;
+    border: 1px solid c.$color-light;
     background-color: c.$color-light;
     padding: 10px 21px;
     border-radius: 5px;
     &:focus {
-      border: 1px solid c.$color-primary;
+      border-color: c.$color-primary;
       outline: none;
     }
   }

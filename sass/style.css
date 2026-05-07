@@ -484,13 +484,13 @@ h5 {
 }
 
 .contact-us__form input, .contact-us__form textarea {
-  border: none;
+  border: 1px solid hsl(0, 0%, 100%);
   background-color: hsl(0, 0%, 100%);
   padding: 10px 21px;
   border-radius: 5px;
 }
 .contact-us__form input:focus, .contact-us__form textarea:focus {
-  border: 1px solid hsl(5, 100%, 78.2%);
+  border-color: hsl(5, 100%, 78.2%);
   outline: none;
 }
 .contact-us__form textarea {
