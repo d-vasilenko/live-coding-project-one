@@ -237,7 +237,7 @@ input[type=checkbox], input[type=radio] {
   box-sizing: border-box;
 }
 
-.navigation__link, .logo-path, .button {
+.navigation__link, .footer-navigation__links a, .logo-path, .button {
   transition: all 0.3s ease-out;
 }
 
@@ -245,7 +245,7 @@ input[type=checkbox], input[type=radio] {
   font-family: "Open Sans", Verdana, sans-serif;
 }
 
-.promo__text, .link-button, h1 {
+.promo__text, .footer-navigation__links, .link-button, h1 {
   font-family: "Poppins", Verdana, sans-serif;
 }
 
@@ -396,6 +396,18 @@ h5 {
   height: 17px;
 }
 
+.ico_phone {
+  background-image: url("../../img/icons/phone.svg");
+  width: 13px;
+  height: 13px;
+}
+
+.ico_letter {
+  background-image: url("../../img/icons/letter.svg");
+  width: 11px;
+  height: 8px;
+}
+
 .tags {
   display: flex;
 }
@@ -474,6 +486,38 @@ h5 {
   flex-basis: 48%;
 }
 
+.footer {
+  padding: 60px 0 70px;
+}
+
+.footer__wrapper {
+  display: flex;
+}
+
+.footer-navigation {
+  flex-grow: 1;
+  padding: 0 0 0 152px;
+}
+
+.footer-navigation__title {
+  margin: 0 0 15px;
+}
+
+.footer-navigation__links {
+  padding: 0;
+}
+.footer-navigation__links a {
+  color: hsl(35, 20.9%, 27.3%);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 3.5rem;
+  text-decoration: none;
+}
+.footer-navigation__links a:hover {
+  color: hsl(5, 100%, 78.2%);
+}
+
 .contact-us {
   background: hsl(26, 100%, 94.1%);
   padding: 62px 82px;
@@ -501,6 +545,15 @@ h5 {
 
 .contact-us__button > * {
   min-width: 117px;
+}
+
+.contact-us__content a {
+  text-decoration: none;
+  color: hsl(35, 20.9%, 27.3%);
+  font-size: 2rem;
+}
+.contact-us__content a:hover {
+  color: hsl(5, 100%, 78.2%);
 }
 
 .promo {
@@ -603,6 +656,22 @@ h5 {
 
 .strategy__name {
   margin: 0 0 29px;
+}
+
+.about-us {
+  padding: 30px 0 100px;
+}
+
+.about-us__title {
+  margin: 0 0 14px;
+}
+
+.about-us__description {
+  margin: 0 0 45px;
+}
+
+.employee {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */

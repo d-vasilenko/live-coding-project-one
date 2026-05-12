@@ -18,6 +18,7 @@
 @use "./layouts/wrapper";
 @use "./layouts/header";
 @use "./layouts/columns";
+@use "./layouts/footer";
 
 // Components
 @use "./components/contact-us";
@@ -25,3 +26,4 @@
 @use "./components/navigation";
 @use "./components/tools";
 @use "./components/strategies";
+@use "./components/about-us";
