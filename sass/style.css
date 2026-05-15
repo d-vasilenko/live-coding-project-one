@@ -672,6 +672,47 @@ h5 {
 
 .employee {
   display: flex;
+  padding: 35px;
+  position: relative;
+  width: calc(30% - 32px);
+}
+
+.employee__name {
+  margin: 0;
+}
+
+.employee__title {
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.4rem;
+  margin: 0;
+}
+
+.employee__contact {
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.4rem;
+  text-decoration: none;
+  color: hsl(228, 87%, 51.8%);
+}
+.employee__contact:hover {
+  text-decoration: underline;
+}
+
+.employee__image {
+  width: 98px;
+  height: 98px;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  right: -32px;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.employee-container {
+  padding: 0 32px 0 0;
 }
 
 /*# sourceMappingURL=style.css.map */

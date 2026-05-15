@@ -1,3 +1,5 @@
+@use "../abstract/constants" as c;
+
 @mixin font ($size, $line-height: $size, $weight: bold, $style: normal) {
   font-size: $size;
   font-style: $style;
@@ -12,4 +14,12 @@
   >* {
     flex-basis: $width;
   }
+}
+
+@mixin media-laptop {
+  @media (max-width: c.$content-width) { @content; }
+}
+
+@mixin media-tablet {
+  @media (max-width: c.$tablet-width) { @content; }
 }
